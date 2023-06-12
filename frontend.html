@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <title>Formulario</title>
+
+</head>
+<body>
+    <div class="form">
+        <form action="" method="post" onsubmit="return Validar()">
+        
+            <h2>Formulario de Registro</h2>
+
+            <div class = col-md-6>
+                <label for="email" class="label">Correo Electrónico:</label>
+                <input type="email" placeholder="Ingrese su correo electronico" id="correo" name="">
+                <div id="err_correo"></div>
+            </div>
+
+
+            <div class = col-md-6>
+                <label for="password1">Contraseña:</label>
+                <input type="password" class="form-control" placeholder="Ingrese contraseña" id="password1">
+                <div id="err_password"></div>
+            </div>
+
+            <div class = col-md-6>
+                <label for="password">Confirmar Contraseña:</label>
+                <input type="password" class="form-control" placeholder="Ingrese la contraseña nuevamente" id="password2" >
+                <div id="err_password"></div>
+            </div>
+
+
+
+            <div class = col-md-6>
+            <label for="direccion">Dirección:</label>
+            <input type="text" class="form-control" placeholder="Ingrese su direccion" id="direccion" name="">
+            <div id="err_direccion"></div>
+            </div>
+
+            <div class = col-md-6>
+            <label for="comuna">Comuna:</label>
+            <select id="comuna" name="comuna">
+                <option value="">Seleccionar</option>
+                <option value="comuna1">Panguipulli</option>
+                <option value="comuna2">Futrono</option>
+                <option value="comuna3">Río Bueno</option>
+                <option value="comuna3">Lago Ranco</option>
+                <option value="comuna3">La Unión</option>
+                <option value="comuna3">Corral</option>
+                <option value="comuna3">Paillaco</option>
+                <option value="comuna3">Máfil</option>
+                <option value="comuna3">Valdivia</option>
+                <option value="comuna3">Lanco</option>
+                <option value="comuna3">San José De La Mariquina</option>
+                <option value="comuna3">Los Lagos</option>
+
+            </select>
+            </div>
+
+            <div class = col-md-6>
+            <label for="direccion">Codigo Postal:</label>
+            <input type="text" class="form-control" placeholder="Ingrese el Código Postal" id="cpostal" name="">
+            </div>
+
+            <div class = col-md-6>
+            <label for="telefono">Número de Teléfono:</label>
+            <input type="tel" class="form-control" placeholder="+569 XXXX XXXX" id="telefono" name="">
+            <div id="err_telefono"></div>
+            </div>
+
+            <div class = col-md-6>
+            <label for="paginaWeb">Página Web Personal:</label>
+            <input type="url" id="paginaWeb" name="paginaWeb">
+            <div id="err_paginaweb"></div>
+            </div>
+
+            <div class = "container">
+            <label for="aficiones">aficiones:</label>
+            <input id="aficiones" class="form-control" type="text" placeholder="ingrese sus aficiones">
+            <button onclick="proceso()" class="btn btn-primary">Agregar</button>
+            <div class="my-3" id="lista"></div>
+            </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script/script.js"></script>
+            
+</body>
+</html>
